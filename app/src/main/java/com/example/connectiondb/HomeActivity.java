@@ -98,11 +98,13 @@ public class HomeActivity extends AppCompatActivity {
         if (id == R.id.action_about){
             Intent aboutIntent = new Intent(HomeActivity.this, AboutActivity.class);
             startActivity(aboutIntent);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             return true;
         }
         else if(id == R.id.action_profile){
             Intent profileIntent = new Intent(HomeActivity.this, ProfileActivity.class);
             startActivity(profileIntent);
+            overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             return true;
         }
 

@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this,"Register Success", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                         startActivity(intent);
+                        overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
                     }
                     else{
                         Toast.makeText(MainActivity.this,"failed", Toast.LENGTH_SHORT).show();
