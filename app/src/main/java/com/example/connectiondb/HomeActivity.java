@@ -62,15 +62,20 @@ public class HomeActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.home_item) {
                     Intent intentHome = new Intent(HomeActivity.this,HomeActivity.class);
                     startActivity(intentHome);
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
                     return true;
                 } else if (item.getItemId() == R.id.search_item) {
                     Intent intentSearch = new Intent(HomeActivity.this,HomeActivity.class);
                     startActivity(intentSearch);
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+
                     return  true;
 
                 } else if (item.getItemId() == R.id.favorites_item) {
                     Intent intent_Favorites = new Intent(HomeActivity.this,FavoritesActivity.class);
                     startActivity(intent_Favorites);
+                    overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+
                     return true;
                 }
 
