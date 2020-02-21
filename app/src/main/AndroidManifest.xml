@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.connectiondb">
+    package="com.example.MeetEat">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,33 +12,58 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".FavoritesActivity" android:label="Favorites"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
+        <activity android:name=".SearchActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".SendMailActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".RecipesActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".LegalActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ContactsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:label="Favorites" >
+        </activity>
         <activity
             android:name=".ProfileActivity"
             android:parentActivityName=".HomeActivity" />
         <activity
-            android:name=".HomeActivity"
-            android:label="Home"
-            android:parentActivityName=".HomeActivity" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".RegisterActivity"
             android:label="Register"
             android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="Login"
-            android:parentActivityName=".HomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".ToolbarActivity" />
-        <activity
-            android:name=".AboutActivity"
-            android:label="About us"
             android:parentActivityName=".HomeActivity" />
+        <activity android:name=".ToolbarActivity" />
     </application>
 
 </manifest>

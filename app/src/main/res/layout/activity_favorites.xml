@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FavoritesActivity">
 
-    <include layout="@layout/toolbar_activity"/>
-    <include layout="@layout/bottomnav_activity"/>
+
 
     <TextView
         android:id="@+id/textView2"
@@ -15,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
         android:gravity="center"
-        android:text="Welcome"
+        android:text="Welcome Favorites"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +46,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <include layout="@layout/menu_nav"/>
+    <include layout="@layout/bottomnav_activity"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

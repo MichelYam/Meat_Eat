@@ -5,4 +5,19 @@
     <string name="home">home</string>
     <string name="favorites">favorites</string>
     <string name="search">search</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="facebook">
+        <a href="https://www.facebook.com/meet.and.eat.barcelona">Meet &amp; Eat Barcelona</a>
+    </string>
+
+    <string name="instagram">
+        <a href="https://www.instagram.com/meetandeat_barcelona/">meetandeat_barcelona</a>
+    </string>
+    <string name="mail">info@meeteat.org</string>
+
+
 </resources>
